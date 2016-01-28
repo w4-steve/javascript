@@ -1,9 +1,7 @@
-# Airbnb JavaScript Style Guide() {
+# Gabe JavaScript Style Guide() {
 
+*It is forked from [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)*
 *A mostly reasonable approach to JavaScript*
-
-[![Downloads](https://img.shields.io/npm/dm/eslint-config-airbnb.svg)](https://www.npmjs.com/package/eslint-config-airbnb)
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Other Style Guides
  - [ES5](es5/)
@@ -150,13 +148,13 @@ Other Style Guides
     ```javascript
     // bad
     const superman = {
-      default: { clark: 'kent' },
+      default: {clark: 'kent'},
       private: true,
     };
 
     // good
     const superman = {
-      defaults: { clark: 'kent' },
+      defaults: {clark: 'kent'},
       hidden: true,
     };
     ```
@@ -365,12 +363,12 @@ Other Style Guides
 
     // good
     function getFullName(user) {
-      const { firstName, lastName } = user;
+      const {firstName, lastName} = user;
       return `${firstName} ${lastName}`;
     }
 
     // best
-    function getFullName({ firstName, lastName }) {
+    function getFullName({firstName, lastName}) {
       return `${firstName} ${lastName}`;
     }
     ```
@@ -405,11 +403,11 @@ Other Style Guides
     // good
     function processInput(input) {
       // then a miracle occurs
-      return { left, right, top, bottom };
+      return {left, right, top, bottom};
     }
 
     // the caller selects only the data they need
-    const { left, right } = processInput(input);
+    const {left, right} = processInput(input);
     ```
 
 
@@ -591,7 +589,7 @@ Other Style Guides
     }
     count();  // 1
     count();  // 2
-    count(3); // 3
+    count(3);  // 3
     count();  // 3
     ```
 
@@ -1375,27 +1373,27 @@ Other Style Guides
 
   - [17.3](#17.3) <a name='17.3'></a> Prefixing your comments with `FIXME` or `TODO` helps other developers quickly understand if you're pointing out a problem that needs to be revisited, or if you're suggesting a solution to the problem that needs to be implemented. These are different than regular comments because they are actionable. The actions are `FIXME -- need to figure this out` or `TODO -- need to implement`.
 
-  - [17.4](#17.4) <a name='17.4'></a> Use `// FIXME:` to annotate problems.
+  - [17.4](#17.4) <a name='17.4'></a> Use `// FIXME(name):` to annotate problems.
 
     ```javascript
     class Calculator extends Abacus {
       constructor() {
         super();
 
-        // FIXME: shouldn't use a global here
+        // FIXME(name): shouldn't use a global here
         total = 0;
       }
     }
     ```
 
-  - [17.5](#17.5) <a name='17.5'></a> Use `// TODO:` to annotate solutions to problems.
+  - [17.5](#17.5) <a name='17.5'></a> Use `// TODO(name):` to annotate solutions to problems.
 
     ```javascript
     class Calculator extends Abacus {
       constructor() {
         super();
 
-        // TODO: total should be configurable by an options param
+        // TODO(steve): total should be configurable by an options param
         this.total = 0;
       }
     }
@@ -1674,14 +1672,14 @@ Other Style Guides
     console.log(foo[0]);
     ```
 
-  - [18.11](#18.11) <a name='18.11'></a> Add spaces inside curly braces. eslint: [`object-curly-spacing`](http://eslint.org/docs/rules/object-curly-spacing.html) jscs: [`disallowSpacesInsideObjectBrackets`](http://jscs.info/rule/disallowSpacesInsideObjectBrackets)
+  - [18.11](#18.11) <a name='18.11'></a> Do not add spaces inside curly braces. eslint: [`object-curly-spacing`](http://eslint.org/docs/rules/object-curly-spacing.html) jscs: [`disallowSpacesInsideObjectBrackets`](http://jscs.info/rule/disallowSpacesInsideObjectBrackets)
 
     ```javascript
     // bad
-    const foo = {clark: 'kent'};
+    const foo = { clark: 'kent' };
 
     // good
-    const foo = { clark: 'kent' };
+    const foo = {clark: 'kent'};
     ```
 
   - [18.12](#18.12) <a name='18.12'></a> Avoid having lines of code that are longer than 100 characters (including whitespace). eslint: [`max-len`](http://eslint.org/docs/rules/max-len.html) jscs: [`maximumLineLength`](http://jscs.info/rule/maximumLineLength)
@@ -2108,7 +2106,7 @@ Other Style Guides
 
     ```javascript
     // good
-    $(this).trigger('listingUpdated', { listingId: listing.id });
+    $(this).trigger('listingUpdated', {listingId: listing.id});
 
     ...
 
