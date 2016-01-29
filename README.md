@@ -589,7 +589,7 @@ Other Style Guides
     }
     count();  // 1
     count();  // 2
-    count(3); // 3
+    count(3);  // 3
     count();  // 3
     ```
 
@@ -661,7 +661,7 @@ Other Style Guides
     }
 
     function f2(a) {
-      if (!a) {a = 1;}
+      if (!a) { a = 1; }
     }
 
     // good
@@ -1265,7 +1265,7 @@ Other Style Guides
     }
 
     // bad
-    function foo() {return false;}
+    function foo() { return false; }
 
     // good
     function bar() {
