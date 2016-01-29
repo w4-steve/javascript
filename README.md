@@ -589,7 +589,7 @@ Other Style Guides
     }
     count();  // 1
     count();  // 2
-    count(3);  // 3
+    count(3); // 3
     count();  // 3
     ```
 
@@ -661,7 +661,7 @@ Other Style Guides
     }
 
     function f2(a) {
-      if (!a) { a = 1; }
+      if (!a) {a = 1;}
     }
 
     // good
@@ -900,7 +900,7 @@ Other Style Guides
     export default AirbnbStyleGuide.es6;
 
     // best
-    import { es6 } from './AirbnbStyleGuide';
+    import {es6} from './AirbnbStyleGuide';
     export default es6;
     ```
 
@@ -923,11 +923,11 @@ Other Style Guides
     ```javascript
     // bad
     // filename es6.js
-    export { es6 as default } from './airbnbStyleGuide';
+    export {es6 as default} from './airbnbStyleGuide';
 
     // good
     // filename es6.js
-    import { es6 } from './AirbnbStyleGuide';
+    import {es6} from './AirbnbStyleGuide';
     export default es6;
     ```
 
@@ -1265,7 +1265,7 @@ Other Style Guides
     }
 
     // bad
-    function foo() { return false; }
+    function foo() {return false;}
 
     // good
     function bar() {
@@ -1691,7 +1691,7 @@ Other Style Guides
     const foo = 'Whatever national crop flips the window. The cartoon reverts within the screw. Whatever wizard constrains a helpful ally. The counterpart ascends!';
 
     // bad
-    $.ajax({ method: 'POST', url: 'https://airbnb.com/', data: { name: 'John' } }).done(() => console.log('Congratulations!')).fail(() => console.log('You have failed this city.'));
+    $.ajax({method: 'POST', url: 'https://airbnb.com/', data: {name: 'John'}}).done(() => console.log('Congratulations!')).fail(() => console.log('You have failed this city.'));
 
     // good
     const foo = 'Whatever national crop flips the window. The cartoon reverts within the screw. ' +
@@ -1701,7 +1701,7 @@ Other Style Guides
     $.ajax({
       method: 'POST',
       url: 'https://airbnb.com/',
-      data: { name: 'John' },
+      data: {name: 'John'},
     })
       .done(() => console.log('Congratulations!'))
       .fail(() => console.log('You have failed this city.'));
