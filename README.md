@@ -1333,20 +1333,20 @@ Other Style Guides
     }
     ```
 
-  - [17.2](#17.2) <a name='17.2'></a> Use `//` for all comments. Place comments on a newline above the subject of the comment. Prefer to put an empty line before the comment unless it's on the first line of a block.
+  - [17.2](#17.2) <a name='17.2'></a> Use `//` for all comments. Place comments on a newline above the subject of the comment. Prefer to put an empty line before the comment unless it's on the first line of a block. Start with an uppercase letter.
 
     ```javascript
     // bad
-    const active = true;  // is current tab
+    const active = true;  // Is current tab
 
     // good
-    // is current tab
+    // Is current tab
     const active = true;
 
     // bad
     function getType() {
       console.log('fetching type...');
-      // set the default type to 'no type'
+      // Set the default type to 'no type'
       const type = this._type || 'no type';
 
       return type;
@@ -1356,7 +1356,7 @@ Other Style Guides
     function getType() {
       console.log('fetching type...');
 
-      // set the default type to 'no type'
+      // Set the default type to 'no type'
       const type = this._type || 'no type';
 
       return type;
@@ -1364,7 +1364,7 @@ Other Style Guides
 
     // also good
     function getType() {
-      // set the default type to 'no type'
+      // Set the default type to 'no type'
       const type = this._type || 'no type';
 
       return type;
@@ -1382,7 +1382,7 @@ Other Style Guides
       constructor() {
         super();
 
-        // TODO(steve): total should be configurable by an options param
+        // TODO(steve): Total should be configurable by an options param
         this.total = 0;
       }
     }
